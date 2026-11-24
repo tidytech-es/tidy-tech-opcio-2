@@ -1,0 +1,12 @@
+// Cloudflare Workers amb fitxers estàtics (web sense compilació).
+// Cloudflare publica la carpeta arrel; .assetsignore exclou el que no és web.
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "tidy-tech",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
